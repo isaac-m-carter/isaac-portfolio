@@ -1,0 +1,263 @@
+/* font styling */
+html {
+    /* min-height: 100%; */
+    font-family: 'Manrope', sans-serif;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 140%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: 700;
+    color: #1D3F40;
+}
+
+h2 {
+    font-size: 24pt;
+    font-weight: 300;
+    color: #517D88;
+}
+
+h3 {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #DFE7E9;
+    margin: 5px 0
+}
+
+h4 {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #2D646B;
+    margin: 5px 0
+}
+
+h5 {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #9DB7C8;
+}
+
+h6 {
+    font-size: 14pt;
+    font-weight: 500;
+    color: #DFE7E9;
+}
+
+p {
+    font-size: 16pt;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.flex-column .content-container p {
+    text-align: justify;
+}
+
+.p-alt-clr {
+    color: #1D3F40;
+}
+
+.right-align {
+    text-align: right;
+}
+/* font styling end */
+/* -------------------------------------------- */
+/* container styling */
+.container-clr-1 {
+    background-color: #DFE7E9;
+}
+
+.container-clr-2 {
+    background-color: #2D646B;    
+}
+
+.container-clr-3 {
+    background-color: #517D88;
+}
+
+body {
+    margin: 0;
+}
+
+#main-container {
+    width: 100%;
+    position: relative;
+}
+
+#header-container-wrapper {
+    background-image: url(./assets/images/portfolio-pattern.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding: 3rem 0;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DFE7E9;
+    padding: 3rem 5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.sidebar-container div {
+    margin-bottom: 1rem;
+}
+
+.content-container {
+    height: fit-content;
+    padding: 2rem 5rem;
+    flex-grow: 4;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    min-width: 25%;
+    padding: 2rem 5rem;
+}
+
+.fixed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 3rem;
+    width: 25vw;
+    min-height: 95vh
+}
+
+.project-examples-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-example-img-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #DFE7E9;
+    margin-top: .5rem;
+}
+
+.project-example-img-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+/* container styling end */
+/* -------------------------------------------- */
+/* image styling */
+.socials-img {
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.project-example-img {
+    width: inherit;
+    height: auto;
+}
+/* image styling end */
+/* -------------------------------------------- */
+/* footer styling */
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+/* footer styling end */
+/* -------------------------------------------- */
+/* Media Queries */
+@media screen and (max-width: 900px){
+    #header-container {
+        padding: 2rem;
+    }
+
+    .content-container, .sidebar-container {
+        padding: 1rem 2rem;
+    }
+
+    .project-example-img-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 26pt;
+    }
+    
+    h2 {
+        font-size: 18pt;
+    }
+    
+    h3 {
+        font-size: 16pt;
+    }
+    
+    h4 {
+        font-size: 16pt;
+    }
+    
+    h5 {
+        font-size: 14pt;
+    }
+    
+    h6 {
+        font-size: 12pt;
+    }
+    
+    p {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .content-container, .sidebar-container {
+        padding: 1rem 1rem;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fixed-container {
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    h1 {
+        font-size: 26pt;
+    }
+    
+    h2 {
+        font-size: 18pt;
+    }
+
+    .right-align {
+        text-align: left;
+    }
+}
